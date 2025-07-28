@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { useParams, useNavigate, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import StarRatings from "react-star-ratings";
 import axios from "../axios";
 import { API_KEY, imageUrl, imageUrl2 } from "../Constants/Constance";
 
-import Navbar from "../componets/Header/Navbar";
 import Footer from "../componets/Footer/Footer";
-import useUpdateMylist from "../CustomHooks/useUpdateMylist";
+import Navbar from "../componets/Header/Navbar";
 import useUpdateLikedMovies from "../CustomHooks/useUpdateLikedMovies";
+import useUpdateMylist from "../CustomHooks/useUpdateMylist";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -359,7 +359,7 @@ function Play() {
                   }`
                 }
                 className="w-40 rounded-sm lg:w-[45rem] ml-4 lg:ml-0"
-                alt=<img src="https://i.ytimg.com/vi/Mwf--eGs05U/maxresdefault.jpg" />
+                alt="Movie Poster"
               />
             </div>
           </section>
